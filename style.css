@@ -74,6 +74,7 @@ body {
   width: 50%;
   margin: auto;
   color: #fff;
+  font-size: 20px;
 }
 
 #top-content h1 {
@@ -181,56 +182,68 @@ body {
   transition: 0.3s ease;
 }
 
-/* background-content */
+/* designs-content */
 
-#background-content {
+#designs-content {
   background-image: url(./img/bg-4.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  min-height: 170vh;
   overflow: hidden;
 }
 
-.container-background {
-  width: 80%;
-  min-height: auto;
-  margin: 12% auto 20px;
-  display: flex;
-  /* border: rgb(209, 209, 209) solid 2px;
-  border-radius: 20px; */
-}
-
-.container-background h1 {
-  flex-basis: 30%;
+#designs-content h1 {
   color: rgb(209, 209, 209);
   font-size: 40px;
-  margin: auto 100px;
+  margin: 140px auto 20px;
   text-align: center;
-  padding-right: 70px;
-  border-right: rgb(209, 209, 209) solid 7px;
   text-transform: uppercase;
 }
 
-.schools {
-  flex-basis: 70%;
-  color: rgb(209, 209, 209);
-  text-align: left;
-  margin: 10px auto;
+#designs-content p {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+#designs-content a {
+  text-decoration: none;
+  color: #fff;
+  background: none;
+  padding: 10px;
+  border: 2px solid teal;
+  border-radius: 10px;
+  outline: none;
+}
+
+#designs-content a:hover {
+  background-color: teal;
+  transition: 0.3s ease;
+}
+
+.container-designs {
+  width: 80%;
+  min-height: auto;
+  margin: 0 auto 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 2px solid rgb(209, 209, 209);
+  border-radius: 10px;
+}
+
+.container-designs img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 /* skills content */
-
-.container-skills {
-  width: 80%;
-  margin: 50px auto;
-  display: flex;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-columns: repeat(auto-fit, 300px);
-  grid-column-gap: 85px;
-  grid-row-gap: 40px; */
-}
 
 #skills-content h1 {
   color: #303030;
@@ -240,6 +253,18 @@ body {
   width: 50%;
   border: 2px solid #303030;
   border-radius: 10px;
+}
+
+.container-skills {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-column-gap: auto;
+  grid-row-gap: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card {
@@ -418,28 +443,36 @@ body {
     margin: 20px 37%;
   }
 
-  .container-background {
-    margin: 15% auto;
+  #designs-content {
+    background: none;
+  }
+
+  #designs-content h1 {
+    color: #303030;
+    border: 2px solid #303030;
+    width: 70%;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+
+  #designs-content a {
+    color: #fff;
+    background-color: teal;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .container-designs {
+    margin: 10px auto;
     display: block;
-    width: 90%;
-  }
-
-  .container-background h3,
-  .container-background p {
-    width: 90%;
-    margin: 10px 20%;
-    font-size: 20px;
-  }
-
-  .container-background h1 {
-    font-size: 30px;
-    margin-bottom: 20px;
     border: none;
+    width: 50%;
   }
 
   .container-skills {
     display: inline-block;
     width: 100%;
+    margin-top: 0;
   }
 
   .container-contact {
@@ -503,37 +536,49 @@ body {
   .btn-about {
     float: none;
     width: 100%;
-    margin: 20px auto;
+    margin: 20px auto 0;
     text-align: center;
   }
 
-  .container-background {
-    margin: 20% -10px;
-    display: block;
-    width: 90%;
+  #designs-content {
+    background: none;
+    margin: -50px auto;
   }
 
-  .container-background {
-    margin: 50% auto;
+  .container-designs {
+    margin: 0 auto;
     display: block;
     width: 90%;
+    border: none;
   }
 
-  .container-background h1,
-  .container-background h3,
-  .container-background p {
+  #designs-content h1 {
+    color: #303030;
+    font-size: 40px;
+    border: 2px solid #303030;
+    width: 70%;
+    border-radius: 10px;
+  }
+
+  #designs-content a {
+    color: #fff;
     border: none;
     width: 90%;
     margin: 10px auto;
     font-size: 16px;
+    background-color: teal;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
   }
 
-  .container-background h1 {
-    font-size: 26px;
+  #skills-content h1 {
+    margin: 100px auto 20px;
   }
 
   .container-skills {
     display: inline-block;
+    margin: 10px auto;
     width: 100%;
   }
 
@@ -554,6 +599,7 @@ body {
   .container-contact h1 {
     text-align: center;
     width: 100%;
+    font-size: 30px;
   }
 
   .container-contact input,
