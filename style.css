@@ -162,7 +162,8 @@ body {
 
 .btn-about {
   float: right;
-  margin-right: 10%;
+  margin-right: 8%;
+  margin-top: 20px;
 }
 
 .btn-about .cmn-btn {
@@ -297,12 +298,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 50vh;
   overflow: hidden;
 }
 
 .container-contact {
-  width: 50%;
+  width: 40%;
+  height: auto;
   margin: 12% auto 5%;
 }
 
@@ -311,12 +312,16 @@ body {
   width: 100%;
   color: rgb(209, 209, 209);
   padding: 10px 0;
-  margin: auto;
+  margin: 0 auto;
+  font-size: 40px;
 }
 
 .container-contact form {
   margin: auto;
   padding: 20px;
+  border: 2px solid rgb(209, 209, 209);
+  border-radius: 10px;
+  padding: 20px 0;
 }
 
 .container-contact label {
@@ -328,7 +333,7 @@ body {
 .container-contact label {
   width: 60%;
   margin: 10px 20%;
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 10px;
   border: none;
 }
@@ -339,8 +344,8 @@ body {
 }
 
 .container-contact button {
-  width: 20%;
-  margin: 0 40%;
+  width: 25%;
+  margin: 0 38%;
   padding: 14px 30px;
   background: transparent;
   outline: none;
@@ -349,6 +354,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 /* footer-content */
@@ -374,6 +380,53 @@ body {
   width: 25px;
   height: 3px;
   margin: 5px;
+}
+
+/* 1920px display */
+@media screen and (min-width: 1920px) {
+  .container-about {
+    width: 50%;
+    height: auto;
+  }
+
+  .btn-about {
+    float: right;
+    margin-right: 24%;
+    margin-top: 20px;
+  }
+
+  #designs-content {
+    min-height: 160vh;
+  }
+
+  #designs-content h1 {
+    color: rgb(209, 209, 209);
+    font-size: 40px;
+    margin: 10% auto 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .container-designs {
+    grid-template-columns: repeat(auto-fit, 300px);
+  }
+
+  .container-designs img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .container-skills {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, 300px); */
+    grid-column-gap: auto;
+    grid-row-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 /* Tablet 768px */
@@ -434,7 +487,7 @@ body {
   .container-about p {
     width: 90%;
     text-align: center;
-    margin: 10% auto;
+    margin: 20px auto;
   }
 
   .btn-about {
@@ -478,6 +531,7 @@ body {
   .container-contact {
     width: 100%;
     margin: 20% auto 5%;
+    border: none;
   }
 
   .container-contact h1 {
@@ -594,6 +648,7 @@ body {
   .container-contact {
     width: 100%;
     margin: 20% auto 5%;
+    border: none;
   }
 
   .container-contact h1 {
