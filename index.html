@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <title>RRCUNANAN Portfolio</title>
 </head>
 <body>
     <section id="header">
         <div class="logo">
-            <h1>rrcunanan</h1>
+            <h1><a href="#top-content">rr.d</a></h1>
         </div>
         <nav class="nav-links">
             <ul>
@@ -29,7 +30,7 @@
     </section>
     
     <section id="top-content">
-        <h1>My Portfolio</h1>
+        <h1>RR DESIGNS</h1>
         <p>Welcome to my Personal Portfolio!</p>
         <div class="sns-links">
             <a href="https://www.facebook.com/rrcunanan" target="_blank"><img src="./img/facebook.png"></a>
@@ -75,6 +76,7 @@
     </section>
 
     <section id="skills-content">
+        <h1>SKILLS</h1>
         <div class="container-skills">
             <div class="card">
                 <img src="./img/html.png">
@@ -118,7 +120,12 @@
             <a href="https://www.linkedin.com/in/rhodrick-cunanan-90a8b6203/" target="_blank"><img src="./img/linkedin.png"></a>
         </div>
     </footer>
-
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 1000,
+                speedAsDuration: true
+            });
+    </script>
     <script src="app.js"></script>
 </body>
 </html>
