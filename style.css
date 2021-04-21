@@ -59,8 +59,6 @@ body {
 /* top-content */
 #top-content {
   min-height: 90vh;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
-    url(./img/top-bg.jpeg); */
   background-image: url(./img/bg-6.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -260,7 +258,7 @@ body {
   width: 80%;
   margin: 50px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-columns: repeat(auto-fit, 300px);
   grid-column-gap: auto;
   grid-row-gap: 20px;
@@ -269,7 +267,6 @@ body {
 }
 
 .card {
-  flex-basis: 33.33%;
   margin: 0 20px;
   height: auto;
   text-align: center;
@@ -429,10 +426,38 @@ body {
   }
 }
 
+/* laptop 1024px */
+@media screen and (max-width: 1024px) {
+  .logo {
+    margin-left: 50px;
+  }
+
+  .nav-links ul {
+    margin-right: 50px;
+  }
+
+  .sns-links {
+    width: 50%;
+    margin: 5% auto 30px;
+  }
+
+  .container-designs {
+    grid-template-columns: repeat(auto-fit, 150px);
+  }
+
+  .container-skills {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /* Tablet 768px */
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
+  }
+
+  .logo {
+    margin-left: 50px;
   }
 
   nav {
@@ -461,6 +486,7 @@ body {
 
   .burger {
     display: block;
+    margin-right: 50px;
   }
 
   .burger div {
