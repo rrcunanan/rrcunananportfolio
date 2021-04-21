@@ -539,6 +539,11 @@ body {
     width: 100%;
   }
 
+  .container-contact form {
+    margin: 0 10%;
+    border: none;
+  }
+
   .container-contact input,
   .container-contact textarea,
   .container-contact label {
@@ -655,6 +660,10 @@ body {
     text-align: center;
     width: 100%;
     font-size: 30px;
+  }
+
+  .container-contact form {
+    border: none;
   }
 
   .container-contact input,
