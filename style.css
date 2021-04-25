@@ -331,6 +331,7 @@ body {
 .container-contact input,
 .container-contact textarea,
 .container-contact label {
+  font-family: "Poppins", sans-serif;
   width: 60%;
   margin: 10px 20%;
   font-size: 16px;
