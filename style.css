@@ -344,7 +344,11 @@ body {
 }
 
 .g-recaptcha {
-  margin: 0 23% 20px;
+  margin: 0 30%;
+  transform: scale(0.77);
+  -webkit-transform: scale(0.77);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
 }
 
 .container-contact button {
@@ -499,7 +503,7 @@ body {
   }
 
   .g-recaptcha {
-    margin: 0 13% 20px;
+    margin: 0 24% 20px;
   }
 }
 
@@ -637,7 +641,7 @@ body {
   }
 
   .g-recaptcha {
-    margin: 0 25% 20px;
+    margin: 0 30% 20px;
   }
 }
 
@@ -773,7 +777,7 @@ body {
   }
 
   .g-recaptcha {
-    margin: 0 auto 20px;
+    margin: 0 5% 20px;
   }
 }
 
