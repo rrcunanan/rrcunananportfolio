@@ -343,6 +343,10 @@ body {
   padding: 10px;
 }
 
+.g-recaptcha {
+  margin: 0 23% 20px;
+}
+
 .container-contact button {
   width: 25%;
   margin: 0 38%;
@@ -460,6 +464,10 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+
+  .g-recaptcha {
+    margin: 0 31% 20px;
+  }
 }
 
 /* laptop 1024px */
@@ -488,6 +496,10 @@ body {
   .container-contact button {
     width: 50%;
     margin: 0 27%;
+  }
+
+  .g-recaptcha {
+    margin: 0 13% 20px;
   }
 }
 
@@ -623,6 +635,10 @@ body {
     width: 30%;
     margin: 0 34%;
   }
+
+  .g-recaptcha {
+    margin: 0 25% 20px;
+  }
 }
 
 @media screen and (max-width: 553px) and (min-width: 320px) {
@@ -755,6 +771,10 @@ body {
     width: 16px;
     border-radius: 6px;
   }
+
+  .g-recaptcha {
+    margin: 0 auto 20px;
+  }
 }
 
 .nav-active {
@@ -782,8 +802,4 @@ body {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.g-recaptcha {
-  margin: 0 23% 20px;
 }
