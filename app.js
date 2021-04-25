@@ -1,9 +1,22 @@
-var scroll = new SmoothScroll('a[href*="#"]', {
+// event listeners
+document.addEventListener('DOMContentLoaded', myFunctions);
+
+//generate lists
+function myFunctions() {
+    navSlide();
+    smoothScroll();
+    messageHandler();
+}
+
+// functions
+function smoothScroll(){
+    const scroll = new SmoothScroll('a[href*="#"]', {
                 speed: 1000,
                 speedAsDuration: true
             });
+}
 
-const navSlide = () => {
+function navSlide() {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
@@ -26,8 +39,33 @@ const navSlide = () => {
         //burger animation
         burger.classList.toggle('toggle');
     });
-
-    
 }
 
-navSlide();
+function messageHandler() {
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+            status.classList.add('success');
+            status.innerHTML = "Thanks for your submission!";
+            form.reset()
+      }).catch(error => {
+            status.classList.add('error');
+            status.innerHTML = "There was a problem submitting your form."
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+}
+
+
+
+
