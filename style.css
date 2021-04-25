@@ -176,8 +176,9 @@ body {
 }
 
 .cmn-btn:hover {
-  color: teal;
-  border-color: teal;
+  color: #fff;
+  background-color: teal;
+  border: 2px solid teal;
   transition: 0.3s ease;
 }
 
@@ -210,14 +211,16 @@ body {
   text-decoration: none;
   color: #fff;
   background: none;
-  padding: 10px;
-  border: 2px solid teal;
+  padding: 14px 30px;
+  border: 2px solid rgb(209, 209, 209);
   border-radius: 10px;
   outline: none;
 }
 
 #designs-content a:hover {
+  color: #fff;
   background-color: teal;
+  border: 2px solid teal;
   transition: 0.3s ease;
 }
 
@@ -301,7 +304,7 @@ body {
 .container-contact {
   width: 40%;
   height: auto;
-  margin: 12% auto 5%;
+  margin: 12% auto 10px;
 }
 
 .container-contact h1 {
@@ -332,7 +335,7 @@ body {
   margin: 10px 20%;
   font-size: 16px;
   border-radius: 10px;
-  border: none;
+  resize: vertical;
 }
 
 .container-contact input,
@@ -345,8 +348,7 @@ body {
   margin: 0 38%;
   padding: 14px 30px;
   background: transparent;
-  outline: none;
-  border: 2px solid rgb(209, 209, 209);
+  font-size: 14px;
   color: rgb(209, 209, 209);
   border-radius: 10px;
   cursor: pointer;
@@ -354,6 +356,40 @@ body {
   text-transform: uppercase;
 }
 
+#status {
+  width: 70%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: #fff;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
 /* footer-content */
 
 .main-footer {
@@ -448,6 +484,11 @@ body {
   .container-skills {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .container-contact button {
+    width: 50%;
+    margin: 0 27%;
+  }
 }
 
 /* Tablet 768px */
@@ -481,7 +522,7 @@ body {
 
   .nav-links li {
     opacity: 0;
-    margin: 30px 10px;
+    margin: 30px 30px;
   }
 
   .burger {
@@ -741,4 +782,8 @@ body {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.g-recaptcha {
+  margin: 0 23% 20px;
 }
