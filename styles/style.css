@@ -351,7 +351,7 @@ body {
   text-transform: uppercase;
 }
 
-#contact-content #status {
+#status {
   width: 70%;
   max-width: 500px;
   text-align: center;
@@ -360,13 +360,13 @@ body {
   border-radius: 10px;
 }
 
-#contact-content #status .success {
+#status.success {
   background: #d3fa99;
   -webkit-animation: status 4s ease forwards;
           animation: status 4s ease forwards;
 }
 
-#contact-content #status .error {
+#status.error {
   background: #fa815c;
   color: #fff;
   -webkit-animation: status 4s ease forwards;

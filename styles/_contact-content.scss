@@ -54,24 +54,25 @@
       text-transform: uppercase;
     }
   }
+}
 
-  #status {
-    width: 70%;
-    max-width: 500px;
-    text-align: center;
-    padding: 10px;
-    margin: 20px auto;
-    border-radius: 10px;
-    .success {
-      background: rgb(211, 250, 153);
-      animation: status 4s ease forwards;
-    }
-    .error {
-      background: rgb(250, 129, 92);
-      color: #fff;
-      animation: status 4s ease forwards;
-    }
-  }
+#status {
+  width: 70%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+#status.success {
+  background: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background: rgb(250, 129, 92);
+  color: #fff;
+  animation: status 4s ease forwards;
 }
 
 @keyframes status {
