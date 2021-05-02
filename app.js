@@ -68,7 +68,7 @@ function messageHandler() {
 }
 
 function recaptchaCallback() {
-    $('#submitBtn').removeAttr('disabled');
+    document.getElementById("submitBtn").removeAttribute("disabled");
 };
 
 
