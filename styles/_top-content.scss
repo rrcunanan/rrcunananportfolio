@@ -1,0 +1,41 @@
+#top-content {
+  min-height: 90vh;
+  background: url(../img/bg-6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  text-align: center;
+  h1,
+  p {
+    width: 50%;
+    margin: auto;
+    color: #fff;
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 36px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    border: $primaryTxt solid 2px;
+    border-radius: 20px;
+  }
+}
+
+.sns-links {
+    width: 50%;
+    margin: 10% auto 30px;
+    img {
+      width: 26px;
+      margin-right: 20px;
+      background: $primaryTxt;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    img:hover {
+      background: teal;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+  }

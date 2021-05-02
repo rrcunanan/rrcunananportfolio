@@ -1,0 +1,40 @@
+#skills-content {
+  h1 {
+    color: $primaryColor;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px auto;
+    width: 50%;
+    border: 2px solid $primaryColor;
+    border-radius: 10px;
+  }
+  .skills-container {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-column-gap: auto;
+    grid-row-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    .card {
+      margin: 0 20px;
+      height: auto;
+      text-align: center;
+      border: $primaryColor solid 2px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 6px 10px $primaryColor;
+      &:hover {
+        background: teal;
+        transition: 0.3s ease;
+      }
+      img {
+        width: 200px;
+      }
+      h3 {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+$primaryBG: #242424;
+$primaryTxt: rgb(209, 209, 209);
+$primaryColor: #303030;
+
+@mixin cmnBtn($color) {
+  padding: 14px 30px;
+  background: transparent;
+  outline: none;
+  border: 2px solid $color;
+  color: $color;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  &:hover {
+    color: teal;
+    border-color: teal;
+    transition: 0.3s ease;
+  }
+}

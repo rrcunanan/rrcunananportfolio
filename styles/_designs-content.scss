@@ -1,0 +1,54 @@
+#designs-content {
+  background: url(../img/bg-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 170vh;
+  overflow: hidden;
+  h1 {
+    color: $primaryTxt;
+    font-size: 40px;
+    margin: 140px auto 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    background: none;
+    padding: 14px 30px;
+    border: 2px solid $primaryTxt;
+    border-radius: 10px;
+    outline: none;
+    &:hover {
+      color: #fff;
+      background: teal;
+      border: 2px solid teal;
+      transition: 0.3s ease;
+    }
+  }
+  .designs-container {
+    width: 80%;
+    min-height: auto;
+    margin: 0 auto 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, 200px);
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 2px solid $primaryTxt;
+    border-radius: 10px;
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+  }
+}

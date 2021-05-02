@@ -1,0 +1,40 @@
+#about-content {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  overflow: hidden;
+  .about-container {
+    width: 80%;
+    padding: 30px;
+    min-height: auto;
+    margin: 50px auto 10px;
+    display: flex;
+    border: $primaryColor solid 2px;
+    border-radius: 20px;
+    h1 {
+      flex-basis: 30%;
+      color: $primaryColor;
+      font-size: 40px;
+      margin: auto;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 10px;
+      border-right: $primaryColor solid 7px;
+    }
+    p {
+      flex-basis: 70%;
+      color: $primaryColor;
+      margin: 50px;
+      text-align: left;
+    }
+  }
+  .btn-about {
+    float: right;
+    margin-right: 8%;
+    margin-top: 20px;
+    .cmn-btn {
+      @include cmnBtn(#303030);
+    }
+  }
+}

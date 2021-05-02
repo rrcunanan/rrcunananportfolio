@@ -1,0 +1,90 @@
+#contact-content {
+  background: url(../img/bg-5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  .contact-container {
+    width: 40%;
+    height: auto;
+    margin: 12% auto 10px;
+    h1 {
+      text-align: center;
+      width: 100%;
+      color: $primaryTxt;
+      padding: 10px 0;
+      margin: 0 auto;
+      font-size: 40px;
+    }
+    form {
+      margin: auto;
+      padding: 20px;
+      border: 2px solid $primaryTxt;
+      border-radius: 10px;
+      padding: 20px 0;
+    }
+    label {
+      color: $primaryTxt;
+    }
+    input,
+    textarea,
+    label {
+      font-family: "Poppins", sans-serif;
+      width: 60%;
+      margin: 10px 20%;
+      font-size: 16px;
+      border-radius: 10px;
+      resize: vertical;
+    }
+    input,
+    textarea {
+      padding: 10px;
+    }
+    button {
+      width: 25%;
+      margin: 0 38%;
+      padding: 14px 30px;
+      background: transparent;
+      font-size: 14px;
+      color: $primaryTxt;
+      border: 2px solid $primaryTxt;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  #status {
+    width: 70%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+    .success {
+      background: rgb(211, 250, 153);
+      animation: status 4s ease forwards;
+    }
+    .error {
+      background: rgb(250, 129, 92);
+      color: #fff;
+      animation: status 4s ease forwards;
+    }
+  }
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
