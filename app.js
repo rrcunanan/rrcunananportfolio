@@ -6,6 +6,7 @@ function myFunctions() {
     navSlide();
     smoothScroll();
     messageHandler();
+    recaptchaCallback();
 }
 
 // functions
@@ -65,6 +66,10 @@ function messageHandler() {
     }
     form.addEventListener("submit", handleSubmit)
 }
+
+function recaptchaCallback() {
+    $('#submitBtn').removeAttr('disabled');
+};
 
 
 
