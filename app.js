@@ -67,10 +67,6 @@ function messageHandler() {
     form.addEventListener("submit", handleSubmit)
 }
 
-function recaptchaCallback() {
-    document.getElementById("submitBtn").removeAttribute("disabled");
-};
-
 
 
 
