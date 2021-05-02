@@ -601,7 +601,7 @@ body {
     color: #303030;
     font-size: 30px;
     border: 2px solid #303030;
-    width: 70%;
+    width: 50%;
     border-radius: 10px;
     margin-bottom: 40px;
   }
@@ -623,6 +623,7 @@ body {
   }
   #skills-content h1 {
     font-size: 30px;
+    width: 50%;
   }
   #skills-content .skills-container {
     display: inline-block;
